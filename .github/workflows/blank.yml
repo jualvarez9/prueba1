@@ -22,3 +22,6 @@ jobs:
     steps:
       - name: "Mostrar mensaje"
         run: echo "Hola, esto es una prueba en GitHub Actions"
+      
+      - name: "Mostrar fecha y hora"
+        run: date
