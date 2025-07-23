@@ -34,3 +34,7 @@ jobs:
         run: |
           echo "Plataforma: ${{ env.platform }}"
           echo "Región: ${{ env.region}}"
+
+      - name: "Variables por defecto"
+        run: |
+          echo "${{ toJson(github.event_name) }}"
