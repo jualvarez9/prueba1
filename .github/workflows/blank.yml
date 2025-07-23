@@ -27,6 +27,7 @@ jobs:
         run: echo "Hola, esto es una prueba en GitHub Actions"
       
       - name: "Mostrar fecha y hora"
+        if: ${{ env.platform == 'Windows' }}
         run: date
       
       - name: "Prueba de mostrar variables de entorno"
