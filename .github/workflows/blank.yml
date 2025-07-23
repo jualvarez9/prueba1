@@ -27,7 +27,7 @@ jobs:
         run: echo "Hola, esto es una prueba en GitHub Actions"
       
       - name: "Mostrar fecha y hora"
-        if: ${{ env.platform == 'Windows' }}
+        if: ${{ env.platform == 'Linux' }}
         run: date
       
       - name: "Prueba de mostrar variables de entorno"
@@ -42,3 +42,4 @@ jobs:
       - name: "Variable runner"
         run: |
           echo "El runner es: ${{ runner.os }}"
+          echo "${GITHUB_ACTOR}"
