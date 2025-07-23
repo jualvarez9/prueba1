@@ -37,4 +37,4 @@ jobs:
 
       - name: "Variables por defecto"
         run: |
-          echo "${{ toJson(github.event_name) }}"
+          echo "${{ toJson(github.event) }}"
