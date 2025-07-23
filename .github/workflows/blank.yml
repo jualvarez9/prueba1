@@ -41,4 +41,4 @@ jobs:
 
       - name: "Variable runner"
         run: |
-          echo "El runner es: ${{ github.runner_name }}"
+          echo "El runner es: ${{ runner.os }}"
