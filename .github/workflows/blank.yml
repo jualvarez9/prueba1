@@ -31,5 +31,5 @@ jobs:
       
       - name: "Prueba de mostrar variables de entorno"
         run: |
-          echo "Plataforma: $platform"
-          echo "Región: $region"
+          echo "Plataforma: ${{ env.platform }}"
+          echo "Región: ${{ env.region}}"
