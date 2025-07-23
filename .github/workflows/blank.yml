@@ -38,3 +38,7 @@ jobs:
       - name: "Variables por defecto"
         run: |
           echo "${{ toJson(github.event) }}"
+
+      - name: "Variable runner"
+        run: |
+          echo "El runner es: ${{ github.runner_name }}"
