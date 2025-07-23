@@ -44,6 +44,6 @@ jobs:
           echo "El runner es: ${{ runner.os }}"
           echo "${GITHUB_ACTOR}"
       - name: "Comprobar nombres"
-        if: ${{ github.actor == 'ju*' }}
+        if: ${{ startsWith(github.actor, 'ju') }}
         run: | 
           echo "El actor es: ${{ github.actor }}"
